@@ -5,8 +5,6 @@ const port=3000
 const router=require('./routes/home-router')
 app.use(express.static(path.join(__dirname, '../public')));
 
-// Add this middleware to serve static files from a specific directory
-//app.use(express.static('./public'));
 
 app.use('/',router)
 app.use((req,res)=>{
